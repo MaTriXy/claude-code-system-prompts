@@ -4,7 +4,7 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
-#### [2.1.73](https://github.com/Piebald-AI/claude-code-system-prompts/commit/c02a840)
+# [2.1.73](https://github.com/Piebald-AI/claude-code-system-prompts/commit/c02a840)
 
 _+13,443 tokens_
 
@@ -32,7 +32,7 @@ _+13,443 tokens_
 - Skill: Build with Claude API — Updated compaction availability from "Opus 4.6 only" to "Opus 4.6 and Sonnet 4.6."
 - System Reminder: Plan mode is active (5-phase) — Extracted Phase 4 (Final Plan) instructions into a separate reusable prompt reference.
 
-#### [2.1.72](https://github.com/Piebald-AI/claude-code-system-prompts/commit/7a45418)
+# [2.1.72](https://github.com/Piebald-AI/claude-code-system-prompts/commit/7a45418)
 
 _+1,643 tokens_
 
@@ -57,7 +57,7 @@ _+1,643 tokens_
 - Tool Description: EnterWorktree — Added mention of ExitWorktree for leaving the worktree mid-session; clarified that the keep/remove prompt on session exit only applies if still in the worktree.
 - Tool Description: WebSearch — Internal variable rename only; no user-facing changes.
 
-#### [2.1.71](https://github.com/Piebald-AI/claude-code-system-prompts/commit/10a9b4f)
+# [2.1.71](https://github.com/Piebald-AI/claude-code-system-prompts/commit/10a9b4f)
 
 _+10,211 tokens_
 
@@ -87,7 +87,7 @@ _+10,211 tokens_
 - Tool Description: Bash (prefer dedicated tools) — The list of commands to avoid running via Bash (previously hardcoded as find, grep, cat, head, tail, sed, awk, echo) is now dynamically determined based on context.
 
 
-#### [2.1.70](https://github.com/Piebald-AI/claude-code-system-prompts/commit/186e12a)
+# [2.1.70](https://github.com/Piebald-AI/claude-code-system-prompts/commit/186e12a)
 
 _+1,212 tokens_
 
@@ -102,7 +102,7 @@ _+1,212 tokens_
 - Agent Prompt: /security-review slash command — Changed git diff command from `--merge-base origin/HEAD` to `origin/HEAD...`; fixed version tag.
 
 
-#### [2.1.69](https://github.com/Piebald-AI/claude-code-system-prompts/commit/2fde688)
+# [2.1.69](https://github.com/Piebald-AI/claude-code-system-prompts/commit/2fde688)
 
 _+3,310 tokens_
 
@@ -139,7 +139,7 @@ _+3,310 tokens_
 
 <sub>_No changes to the system prompts in v2.1.68._</sub>
 
-#### [2.1.66](https://github.com/Piebald-AI/claude-code-system-prompts/commit/c55bb75)
+# [2.1.66](https://github.com/Piebald-AI/claude-code-system-prompts/commit/c55bb75)
 
 _-1,507 tokens_
 
@@ -155,7 +155,7 @@ _-1,507 tokens_
 - Tool Description: ToolSearch extended — Removed comma-separated multi-tool direct selection; `select:` now loads only a single named tool.
 - Tool Description: ToolSearch — Added `ADDITIONAL_PROMPT_SECTION` variable.
 
-#### [2.1.64](https://github.com/Piebald-AI/claude-code-system-prompts/commit/ac581b8)
+# [2.1.64](https://github.com/Piebald-AI/claude-code-system-prompts/commit/ac581b8)
 
 _+1,291 tokens_
 
@@ -170,7 +170,7 @@ _+1,291 tokens_
 - Tool Description: ToolSearch — Removed `EXTENDED_TOOL_SEARCH_PROMPT` variable; inlined the tool description.
 
 
-#### [2.1.63](https://github.com/Piebald-AI/claude-code-system-prompts/commit/7e37a33)
+# [2.1.63](https://github.com/Piebald-AI/claude-code-system-prompts/commit/7e37a33)
 
 _+4,200 tokens_
 
@@ -207,7 +207,7 @@ _+4,200 tokens_
 
 <sub>_No changes to the system prompts in v2.1.61._</sub>
 
-#### [2.1.59](https://github.com/Piebald-AI/claude-code-system-prompts/commit/6147099)
+# [2.1.59](https://github.com/Piebald-AI/claude-code-system-prompts/commit/6147099)
 
 _-493 tokens_
 
@@ -230,7 +230,7 @@ _-493 tokens_
 
 <sub>_No changes to the system prompts in v2.1.54._</sub>
 
-#### [2.1.53](https://github.com/Piebald-AI/claude-code-system-prompts/commit/f7330d2)
+# [2.1.53](https://github.com/Piebald-AI/claude-code-system-prompts/commit/f7330d2)
 
 _-617 tokens_
 
@@ -251,7 +251,7 @@ _-617 tokens_
 
 <sub>_No changes to the system prompts in v2.1.52._</sub>
 
-#### [2.1.51](https://github.com/Piebald-AI/claude-code-system-prompts/commit/1988a63)
+# [2.1.51](https://github.com/Piebald-AI/claude-code-system-prompts/commit/1988a63)
 
 _+6,918 tokens_
 
@@ -284,7 +284,7 @@ _+6,918 tokens_
 - Widespread internal variable renames across 12 files (e.g., `ADDITIONAL_USER_INPUT` → `USER_INPUT`, `PREVIOUS_AGENT_SUMMARY` → `PREVIOUS_SUMMARY`, `SYSTEM_REMINDER` → `PLAN_STATE`, `COMMIT_CO_AUTHORED_BY_CLAUDE_CODE` → `ATTRIBUTION_TEXT`, `IS_TRUTHY_FN` → `IS_BACKGROUND_TASKS_DISABLED_FN`, `CAN_READ_PDF_FILES` → `IS_PDF_SUPPORTED_FN`, and others).
 
 
-#### [2.1.50](https://github.com/Piebald-AI/claude-code-system-prompts/commit/5fa66df)
+# [2.1.50](https://github.com/Piebald-AI/claude-code-system-prompts/commit/5fa66df)
 
 _+110 tokens_
 
@@ -296,7 +296,7 @@ _+110 tokens_
 
 <sub>_No changes to the system prompts in v2.1.49._</sub>
 
-#### [2.1.48](https://github.com/Piebald-AI/claude-code-system-prompts/commit/0d57836)
+# [2.1.48](https://github.com/Piebald-AI/claude-code-system-prompts/commit/0d57836)
 
 _-1,082 tokens_
 
@@ -304,7 +304,7 @@ _-1,082 tokens_
 - **REMOVED:** System Prompt: MCP CLI - Removed instructions for using mcp-cli to interact with Model Context Protocol servers (1333 tks).
 - Tool Description: Task - Simplified background agent output-file guidance; removed `BASH_TOOL` variable and `tail` instructions; added new "Foreground vs background" bullet explaining when to use each mode (1214 → 1228 tks).
 
-#### [2.1.47](https://github.com/Piebald-AI/claude-code-system-prompts/commit/f58cba9)
+# [2.1.47](https://github.com/Piebald-AI/claude-code-system-prompts/commit/f58cba9)
 
 _+34,752 tokens_
 
@@ -324,7 +324,7 @@ _+34,752 tokens_
 - Agent Prompt: Status line setup - Added `added_dirs` field to the workspace schema for directories added via `/add-dir` (1482 → 1502 tks).
 - Tool Description: AskUserQuestion - Added `EXIT_PLAN_MODE_TOOL_NAME` variable; expanded plan mode guidance to warn against referencing "the plan" in questions, since users cannot see the plan until `ExitPlanMode` is called (194 → 287 tks).
 
-#### [2.1.45](https://github.com/Piebald-AI/claude-code-system-prompts/commit/36d2856)
+# [2.1.45](https://github.com/Piebald-AI/claude-code-system-prompts/commit/36d2856)
 
 _+276 tokens_
 
@@ -338,14 +338,14 @@ _+276 tokens_
 
 <sub>_No changes to the system prompts in v2.1.44._</sub>
 
-#### [2.1.42](https://github.com/Piebald-AI/claude-code-system-prompts/commit/8a1123a)
+# [2.1.42](https://github.com/Piebald-AI/claude-code-system-prompts/commit/8a1123a)
 
 _-1,060 tokens_
 
 - **REMOVED:** Agent Prompt: Remember skill - Removed the `/remember` skill prompt that reviewed session memories and updated CLAUDE.local.md with recurring patterns and learnings (1048 tks).
 - Tool Description: WebSearch - Simplified date-awareness variables; replaced `GET_CURRENT_DATE_FN` and `CURRENT_YEAR` with a single `CURRENT_MONTH_YEAR` variable; updated example to use plain text ("with the current year, NOT last year") instead of template expressions (331 → 319 tks).
 
-#### [2.1.41](https://github.com/Piebald-AI/claude-code-system-prompts/commit/91732e4)
+# [2.1.41](https://github.com/Piebald-AI/claude-code-system-prompts/commit/91732e4)
 
 _+262 tokens_
 
@@ -355,19 +355,19 @@ _+262 tokens_
 - System Reminder: Plan mode is active (5-phase) - Made Explore subagent usage conditional; when disabled, Phase 1 now instructs Claude to use Glob, Grep, and Read tools directly; updated Phase 2 variable references for plan subagent and agent count (1429 → 1500 tks).
 - Agent Prompt: Status line setup - Added `session_name` field (optional human-readable session name set via `/rename`) to the JSON input spec (1460 → 1482 tks).
 
-#### [2.1.40](https://github.com/Piebald-AI/claude-code-system-prompts/commit/06ce2b9)
+# [2.1.40](https://github.com/Piebald-AI/claude-code-system-prompts/commit/06ce2b9)
 
 _-293 tokens_
 
 - **REMOVED:** Agent Prompt: Evolve currently-running skill - Removed agent prompt for evolving a currently-running skill based on user requests or preferences (293 tks).
 
-#### [2.1.39](https://github.com/Piebald-AI/claude-code-system-prompts/commit/11e9ec6)
+# [2.1.39](https://github.com/Piebald-AI/claude-code-system-prompts/commit/11e9ec6)
 
 _+293 tokens_
 
 - **NEW:** Agent Prompt: Evolve currently-running skill - Added new agent prompt for evolving a currently-running skill based on what the user is implicitly or explicitly requesting (293 tks).
 
-#### [2.1.38](https://github.com/Piebald-AI/claude-code-system-prompts/commit/30adcee)
+# [2.1.38](https://github.com/Piebald-AI/claude-code-system-prompts/commit/30adcee)
 
 _+105 tokens_
 
