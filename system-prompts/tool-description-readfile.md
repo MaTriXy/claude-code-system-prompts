@@ -1,14 +1,13 @@
 <!--
 name: 'Tool Description: ReadFile'
 description: Tool description for reading files
-ccVersion: 2.1.121
+ccVersion: 2.1.128
 variables:
   - MAX_LINES_CONSTANT
   - CONDITIONAL_LENGTH_NOTE
   - CAT_DASH_N_NOTE
   - READ_FULL_FILE_NOTE
   - CAN_READ_PDF_FILES_FN
-  - HAS_ADDITIONAL_READ_NOTE_FN
   - ADDITIONAL_READ_NOTE
 -->
 Reads a file from the local filesystem. You can access any file directly by using this tool.
@@ -24,4 +23,4 @@ ${READ_FULL_FILE_NOTE}
 - This tool can read Jupyter notebooks (.ipynb files) and returns all cells with their outputs, combining code, text, and visualizations.
 - This tool can only read files, not directories. To list files in a directory, use the registered shell tool.
 - You will regularly be asked to read screenshots. If the user provides a path to a screenshot, ALWAYS use this tool to view the file at the path. This tool will work with all temporary file paths.
-- If you read a file that exists but has empty contents you will receive a system reminder warning in place of file contents.${HAS_ADDITIONAL_READ_NOTE_FN()?ADDITIONAL_READ_NOTE:""}
+- If you read a file that exists but has empty contents you will receive a system reminder warning in place of file contents.${ADDITIONAL_READ_NOTE}

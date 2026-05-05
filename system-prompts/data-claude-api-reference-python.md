@@ -1,7 +1,7 @@
 <!--
 name: 'Data: Claude API reference — Python'
 description: Python SDK reference including installation, client initialization, basic requests, thinking, and multi-turn conversation
-ccVersion: 2.1.118
+ccVersion: 2.1.128
 -->
 # Claude API — Python
 
@@ -411,7 +411,17 @@ The `stop_reason` field in the response indicates why the model stopped generati
 | `stop_sequence` | Hit a custom stop sequence |
 | `tool_use` | Claude wants to call a tool — execute it and continue |
 | `pause_turn` | Model paused and can be resumed (agentic flows) |
-| `refusal` | Claude refused for safety reasons — output may not match your schema |
+| `refusal` | Claude refused for safety reasons — check `stop_details` |
+
+### Structured Stop Details
+
+When `stop_reason` is `"refusal"`, the response includes a `stop_details` object with structured information about the refusal:
+
+```python
+if response.stop_reason == "refusal" and response.stop_details:
+    print(f"Category: {response.stop_details.category}")   # "cyber" | "bio" | None
+    print(f"Explanation: {response.stop_details.explanation}")
+```
 
 ---
 
