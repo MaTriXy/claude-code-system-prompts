@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!important]
 > **NEW (January 23, 2026): We've added all of Claude Code's ~40 system reminders to this list&mdash;see [System Reminders](#system-reminders).**
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.133](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.133) (May 7th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 172 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.136](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.136) (May 8th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 173 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -94,7 +94,7 @@ Sub-agents and utilities.
 
 #### Utilities
 
-- [Agent Prompt: Auto mode rule reviewer](./system-prompts/agent-prompt-auto-mode-rule-reviewer.md) (**257** tks) - Reviews and critiques user-defined auto mode classifier rules for clarity, completeness, conflicts, and actionability.
+- [Agent Prompt: Auto mode rule reviewer](./system-prompts/agent-prompt-auto-mode-rule-reviewer.md) (**292** tks) - Reviews and critiques user-defined auto mode classifier rules for clarity, completeness, conflicts, and actionability.
 - [Agent Prompt: Background agent state classifier](./system-prompts/agent-prompt-background-agent-state-classifier.md) (**4405** tks) - Classifies the tail of a background agent transcript as working, blocked, done, or failed and returns concise state JSON.
 - [Agent Prompt: Background job agent instructions](./system-prompts/agent-prompt-background-job-agent-instructions.md) (**427** tks) - Instructs the built-in background job agent to narrate progress, restate tool results, and emit explicit result, needs input, or failed status signals.
 - [Agent Prompt: Bash command description writer](./system-prompts/agent-prompt-bash-command-description-writer.md) (**207** tks) - Instructions for generating clear, concise command descriptions in active voice for bash commands.
@@ -115,8 +115,8 @@ Sub-agents and utilities.
 - [Agent Prompt: Quick PR creation](./system-prompts/agent-prompt-quick-pr-creation.md) (**986** tks) - Streamlined prompt for creating a commit and pull request with pre-populated context.
 - [Agent Prompt: Quick git commit](./system-prompts/agent-prompt-quick-git-commit.md) (**574** tks) - Streamlined prompt for creating a single git commit with pre-populated context.
 - [Agent Prompt: Recent Message Summarization](./system-prompts/agent-prompt-recent-message-summarization.md) (**724** tks) - Agent prompt used for summarizing recent messages.
-- [Agent Prompt: Security monitor for autonomous agent actions (first part)](./system-prompts/agent-prompt-security-monitor-for-autonomous-agent-actions-first-part.md) (**3196** tks) - Instructs Claude to act as a security monitor that evaluates autonomous coding agent actions against block/allow rules to prevent prompt injection, scope creep, and accidental damage.
-- [Agent Prompt: Security monitor for autonomous agent actions (second part)](./system-prompts/agent-prompt-security-monitor-for-autonomous-agent-actions-second-part.md) (**3767** tks) - Defines the environment context, block rules, and allow exceptions that govern which tool actions the agent may or may not perform.
+- [Agent Prompt: Security monitor for autonomous agent actions (first part)](./system-prompts/agent-prompt-security-monitor-for-autonomous-agent-actions-first-part.md) (**3332** tks) - Instructs Claude to act as a security monitor that evaluates autonomous coding agent actions against block/allow rules to prevent prompt injection, scope creep, and accidental damage.
+- [Agent Prompt: Security monitor for autonomous agent actions (second part)](./system-prompts/agent-prompt-security-monitor-for-autonomous-agent-actions-second-part.md) (**3972** tks) - Defines the environment context, block rules, and allow exceptions that govern which tool actions the agent may or may not perform.
 - [Agent Prompt: Session search](./system-prompts/agent-prompt-session-search.md) (**158** tks) - Subagent prompt for searching past Claude Code conversation sessions by scanning .jsonl transcript files and returning matching session IDs.
 - [Agent Prompt: Session title and branch generation](./system-prompts/agent-prompt-session-title-and-branch-generation.md) (**307** tks) - Agent for generating succinct session titles and git branch names.
 - [Agent Prompt: WebFetch summarizer](./system-prompts/agent-prompt-webfetch-summarizer.md) (**189** tks) - Prompt for agent that summarizes verbose output from WebFetch for the main model.
@@ -170,6 +170,7 @@ The content of various template files embedded in Claude Code.
 
 Parts of the main system prompt.
 
+- [System Prompt: Action safety and truthful reporting](./system-prompts/system-prompt-action-safety-and-truthful-reporting.md) (**144** tks) - Requires confirmation for irreversible or outward-facing actions, checking targets before destructive edits, and truthful reporting of outcomes.
 - [System Prompt: Advisor tool instructions](./system-prompts/system-prompt-advisor-tool-instructions.md) (**443** tks) - Instructions for using the Advisor tool.
 - [System Prompt: Agent Summary Generation](./system-prompts/system-prompt-agent-summary-generation.md) (**178** tks) - System prompt used for "Agent Summary" generation.
 - [System Prompt: Agent memory instructions](./system-prompts/system-prompt-agent-memory-instructions.md) (**337** tks) - Instructions for including memory update guidance in agent system prompts.
@@ -286,7 +287,7 @@ Text for large system reminders.
 - [Tool Description: BrowserBatch](./system-prompts/tool-description-browserbatch.md) (**159** tks) - Tool description for BrowserBatch, which executes multiple browser tool calls sequentially in one round trip.
 - [Tool Description: Computer](./system-prompts/tool-description-computer.md) (**161** tks) - Main description for the Chrome browser computer automation tool.
 - [Tool Description: CronCreate](./system-prompts/tool-description-croncreate.md) (**948** tks) - Describes the CronCreate tool for enqueuing one-shot or recurring cron-based jobs with jitter and off-minute scheduling guidance.
-- [Tool Description: Edit](./system-prompts/tool-description-edit.md) (**197** tks) - Tool for performing exact string replacements in files.
+- [Tool Description: Edit](./system-prompts/tool-description-edit.md) (**202** tks) - Tool for performing exact string replacements in files.
 - [Tool Description: EnterPlanMode](./system-prompts/tool-description-enterplanmode.md) (**878** tks) - Tool description for entering plan mode to explore and design implementation approaches.
 - [Tool Description: EnterWorktree](./system-prompts/tool-description-enterworktree.md) (**604** tks) - Tool description for the EnterWorktree tool.
 - [Tool Description: ExitPlanMode](./system-prompts/tool-description-exitplanmode.md) (**417** tks) - Description for the ExitPlanMode tool, which presents a plan dialog for the user to approve.
